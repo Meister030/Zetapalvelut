@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zeta Palvelut — ammattimainen siivousyritys pääkaupunkiseudulla. Toimistosiivous, ravintolasiivous, kotisiivous, raivaussiivous ja pihatyöt. Alkaen 49,90 €/h.">
+  <meta name="keywords" content="rappusiivous, raivaussiivous, toimistosiivous helsinki, ravintolasiivous, kotisiivous helsinki, siivousyritys pääkaupunkiseutu, ikkunanpesu espoo, lumityöt vantaa">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Zeta Palvelut — Ammattimainen siivousyritys PKS">
+  <meta property="og:description" content="Luotettavaa siivouspalvelua yrityksille ja kotitalouksille. Alkaen 49,90 €/h.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zetapalvelut.fi">
+  <title>Zeta Palvelut — Ammattimainen siivousyritys pääkaupunkiseudulla</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#etusivu" class="nav__logo" onclick="showPage('etusivu')">
+        Zeta<span>Palvelut</span>
+      </a>
+      <nav class="nav__links" aria-label="Päänavigaatio">
+        <a href="#" class="nav__link" onclick="showPage('etusivu')">Etusivu</a>
+        <a href="#" class="nav__link" onclick="showPage('palvelut')">Palvelut</a>
+        <a href="#" class="nav__link" onclick="showPage('hinnoittelu')">Hinnoittelu</a>
+        <a href="#" class="nav__link" onclick="showPage('vastuullisuus')">Vastuullisuus</a>
+        <a href="#" class="nav__link" onclick="showPage('artikkelit')">Artikkelit</a>
+        <a href="#" class="nav__link" onclick="showPage('tyot')">Töihin meille</a>
+        <a href="#" class="nav__link nav__link--cta" onclick="showPage('yhteystiedot')">Pyydä tarjous</a>
+      </nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Avaa valikko" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div class="nav__mobile" id="mobileMenu" aria-hidden="true">
+      <a href="#" onclick="showPage('etusivu');closeMobile()">Etusivu</a>
+      <a href="#" onclick="showPage('palvelut');closeMobile()">Palvelut</a>
+      <a href="#" onclick="showPage('hinnoittelu');closeMobile()">Hinnoittelu</a>
+      <a href="#" onclick="showPage('vastuullisuus');closeMobile()">Vastuullisuus</a>
+      <a href="#" onclick="showPage('artikkelit');closeMobile()">Artikkelit</a>
+      <a href="#" onclick="showPage('tyot');closeMobile()">Töihin meille</a>
+      <a href="#" onclick="showPage('yhteystiedot');closeMobile()" class="mobile-cta">Pyydä tarjous</a>
+    </div>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- ETUSIVU                                                        -->
+  <!-- ============================================================ -->
+  <main id="page-etusivu" class="page active">
+
+    <!-- HERO -->
+    <section class="hero" aria-label="Etusivu hero">
+      <div class="hero__left">
+        <span class="badge">Pääkaupunkiseutu</span>
+        <h1 class="hero__title">Ammattimainen siivous <em>yrityksillesi</em> ja kotiisi</h1>
+        <p class="hero__sub">Luotettavaa ja laadukasta siivouspalvelua Helsingissä, Espoossa ja Vantaalla. Toimistot, ravintolat, kodit ja vaativat erikoiskohteet.</p>
+        <div class="hero__actions">
+          <button class="btn btn--primary" onclick="showPage('yhteystiedot')">Pyydä ilmainen tarjous</button>
+          <button class="btn btn--ghost" onclick="showPage('palvelut')">Tutustu palveluihin →</button>
+        </div>
+        <div class="hero__phone">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          <a href="tel:0505501501">050 550 1501</a> — soita tai lähetä viesti
+        </div>
+      </div>
+      <div class="hero__right" aria-hidden="true">
+        <div class="hero__visual">
+          <div class="hero__circle">
+            <div class="hero__circle-inner">
+              <svg width="64" height="64" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+                <path d="M32 8C20 8 10 18 10 30s10 22 22 22 22-10 22-22S44 8 32 8z" fill="#fff" opacity=".15"/>
+                <path d="M20 44c0-6.627 5.373-12 12-12s12 5.373 12 12" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/>
+                <circle cx="32" cy="26" r="6" stroke="#fff" stroke-width="2.5"/>
+                <path d="M14 32h4M46 32h4M32 14v4M32 46v4" stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".5"/>
+              </svg>
+            </div>
+          </div>
+          <div class="hero__deco hero__deco--1"></div>
+          <div class="hero__deco hero__deco--2"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+      <div class="stats-bar__item">
+        <span class="stats-bar__num">49,90 €</span>
+        <span class="stats-bar__label">alkaen / tunti</span>
+      </div>
+      <div class="stats-bar__divider" aria-hidden="true"></div>
+      <div class="stats-bar__item">
+        <span class="stats-bar__num">PKS</span>
+        <span class="stats-bar__label">Helsinki · Espoo · Vantaa</span>
+      </div>
+      <div class="stats-bar__divider" aria-hidden="true"></div>
+      <div class="stats-bar__item">
+        <span class="stats-bar__num">✓</span>
+        <span class="stats-bar__label">Arvostettu työpaikka -sertifioitu</span>
+      </div>
+      <div class="stats-bar__divider" aria-hidden="true"></div>
+      <div class="stats-bar__item">
+        <span class="stats-bar__num">✓</span>
+        <span class="stats-bar__label">Työturvallisuuskoulutus</span>
+      </div>
+    </div>
+
+    <!-- TRUST STRIP -->
+    <div class="trust-strip">
+      <span class="trust-strip__label">Luotettavuus</span>
+      <div class="trust-strip__divider" aria-hidden="true"></div>
+      <div class="trust-strip__badges">
+        <div class="trust-badge">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Arvostettu työpaikka -sertifioitu
+        </div>
+        <div class="trust-badge">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+          Työturvallisuuskoulutus
+        </div>
+        <div class="trust-badge">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          Pääkaupunkiseutu
+        </div>
+        <div class="trust-badge">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Täsmällinen ja luotettava
+        </div>
+      </div>
+    </div>
+
+    <!-- PALVELUT GRID -->
+    <section class="section" aria-labelledby="palvelut-heading">
+      <div class="section__header">
+        <span class="section__label">Palvelumme</span>
+        <h2 class="section__title" id="palvelut-heading">Kaikki siivoustarpeesi — yhdeltä luukulta</h2>
+        <p class="section__sub">Palvelemme sekä yrityksiä että kotitalouksia. Räätälöimme palvelun aina asiakkaan tarpeen mukaan.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card" onclick="showPage('palvelut')">
+          <div class="service-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+          </div>
+          <h3 class="service-card__title">Toimistosiivous</h3>
+          <p class="service-card__desc">Puhdas ja terveellinen työympäristö kaikenkokoisille yrityksille.</p>
+          <span class="service-card__tag">Yritykset</span>
+        </article>
+        <article class="service-card service-card--featured" onclick="showPage('palvelut')">
+          <div class="service-card__icon service-card__icon--dark">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+          </div>
+          <h3 class="service-card__title">Ravintolasiivous</h3>
+          <p class="service-card__desc">Tunnettuja helsinkiläisravintoloita jo asiakkaina. Hygienia ennen kaikkea.</p>
+          <span class="service-card__tag service-card__tag--dark">Erikoisosaaminen</span>
+        </article>
+        <article class="service-card" onclick="showPage('palvelut')">
+          <div class="service-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          </div>
+          <h3 class="service-card__title">Kotisiivous</h3>
+          <p class="service-card__desc">Puhdas koti ilman vaivaa. Myös eläkeläisille sopiva palvelu.</p>
+          <span class="service-card__tag">Kotitaloudet</span>
+        </article>
+        <article class="service-card" onclick="showPage('palvelut')">
+          <div class="service-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3 class="service-card__title">Tapahtumasiivous</h3>
+          <p class="service-card__desc">Tapahtuman jälkeinen siivous nopeasti ja ammattitaitoisesti.</p>
+          <span class="service-card__tag">Tapahtumat</span>
+        </article>
+        <article class="service-card" onclick="showPage('palvelut')">
+          <div class="service-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3 class="service-card__title">Raivaussiivous</h3>
+          <p class="service-card__desc">Otamme vaativat kohteet vastaan joita muut eivät. Diskreetisti.</p>
+          <span class="service-card__tag">Erikoispalvelu</span>
+        </article>
+        <article class="service-card" onclick="showPage('palvelut')">
+          <div class="service-card__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 010-10"/><path d="M21.5 17a24.12 24.12 0 000-10"/><path d="M8 21s0-4 4-4 4 4 4 4"/><path d="M8 3s0 4 4 4 4-4 4-4"/><line x1="12" y1="7" x2="12" y2="13"/></svg>
+          </div>
+          <h3 class="service-card__title">Lumi- ja pihatyöt</h3>
+          <p class="service-card__desc">Lumityöt, pihanhoito ja ulkoalueiden siistiminen ympäri vuoden.</p>
+          <span class="service-card__tag">Kaikille</span>
+        </article>
+      </div>
+      <div style="text-align:center;margin-top:2rem">
+        <button class="btn btn--outline" onclick="showPage('palvelut')">Kaikki palvelut →</button>
+      </div>
+    </section>
+
+    <!-- MIKSI ZETA -->
+    <section class="why-section" aria-labelledby="miksi-heading">
+      <div class="why-section__inner">
+        <span class="section__label" style="color:#88c888">Miksi Zeta?</span>
+        <h2 class="section__title" id="miksi-heading" style="color:#fff">Kolme syytä valita Zeta Palvelut</h2>
+        <p class="section__sub" style="color:#a8c8a8;margin-bottom:2.5rem">Emme lupaa mitä emme pidä — luotettavuus ja laatu ovat tapamme tehdä töitä.</p>
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-card__num">01</div>
+            <h3 class="why-card__title">Kilpailukykyinen hinta</h3>
+            <p class="why-card__desc">Laadukas siivous ei tarkoita kallista. Hinnoittelumme on läpinäkyvä — 49,90 €/h ilman piilokustannuksia. Kilometrikorvaus 0,80 €/km PKS:n ulkopuolelle.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__num">02</div>
+            <h3 class="why-card__title">Ammattitaitoinen henkilöstö</h3>
+            <p class="why-card__desc">Kaikki siivoojamme ovat koulutettuja ja työturvallisuussertifioituja. Arvostettu työpaikka -sertifioitu yritys.</p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__num">03</div>
+            <h3 class="why-card__title">Luotettavuus ja täsmällisyys</h3>
+            <p class="why-card__desc">Tulemme sovittuna aikana ja teemme työmme huolellisesti. Ei yllätyksiä, ei viivästyksiä — lupaamme vain sen minkä pidämme.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HINTA NOSTO -->
+    <section class="price-highlight" aria-label="Hinnoittelu">
+      <div class="price-highlight__left">
+        <span class="section__label">Hinnoittelu</span>
+        <h2 class="section__title">Selkeä ja reilu hinnoittelu</h2>
+        <p class="section__sub" style="margin-bottom:1.5rem">Ei piilokustannuksia. Tuntiveloitus on aina <strong>49,90 €/h</strong>. Pääkaupunkiseudun (Helsinki, Espoo, Vantaa) ulkopuolelle lisätään kilometrikorvaus <strong>0,80 €/km</strong>.</p>
+        <button class="btn btn--primary" onclick="showPage('yhteystiedot')">Pyydä ilmainen tarjous</button>
+      </div>
+      <div class="price-highlight__card">
+        <div class="price-card-mini">
+          <p class="price-card-mini__from">Tuntiveloitus</p>
+          <div class="price-card-mini__amount">49,90 €</div>
+          <p class="price-card-mini__unit">/ tunti · kaikki palvelut</p>
+          <hr class="price-card-mini__divider">
+          <ul class="price-card-mini__list">
+            <li>
+              <span class="check-circle">✓</span>
+              Kotisiivous ja pihatyöt
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              Toimisto- ja ravintolasiivous
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              Tapahtumasiivous
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              Raivaussiivous ja erikoiskohteet
+            </li>
+          </ul>
+          <div class="price-card-mini__km">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            PKS:n ulkopuolelle + 0,80 €/km
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA SECTION -->
+    <section class="cta-section" aria-label="Yhteydenotto">
+      <div class="cta-section__inner">
+        <div class="cta-section__left">
+          <span class="section__label">Ota yhteyttä</span>
+          <h2 class="section__title">Kartoitetaan tarpeesi yhdessä</h2>
+          <p class="section__sub" style="margin-bottom:2rem">Täytä lomake tai soita suoraan — vastataan nopeasti ja tehdään sinulle sopiva ratkaisu.</p>
+          <div class="contact-info">
+            <a href="tel:0505501501" class="contact-info__item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              050 550 1501
+            </a>
+            <a href="mailto:info@zetapalvelut.fi" class="contact-info__item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              info@zetapalvelut.fi
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" onsubmit="handleSubmit(event)" novalidate>
+          <div class="form-row">
+            <input type="text" placeholder="Nimi" required class="form-input">
+            <input type="text" placeholder="Yritys (valinnainen)" class="form-input">
+          </div>
+          <input type="tel" placeholder="Puhelinnumero" required class="form-input">
+          <input type="email" placeholder="Sähköposti" required class="form-input">
+          <select class="form-input form-select" required>
+            <option value="">Palvelu — valitse</option>
+            <option>Toimistosiivous</option>
+            <option>Ravintolasiivous</option>
+            <option>Kotisiivous</option>
+            <option>Tapahtumasiivous</option>
+            <option>Raivaussiivous</option>
+            <option>Lumi- ja pihatyöt</option>
+            <option>Ikkunanpesu</option>
+            <option>Muu / kysyttävää</option>
+          </select>
+          <textarea placeholder="Kerro lyhyesti tarpeestasi..." class="form-textarea" rows="4"></textarea>
+          <button type="submit" class="btn btn--primary btn--full">Lähetä tarjouspyyntö →</button>
+          <p class="form-note">Käsittelemme tietosi luottamuksellisesti.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" aria-label="Alatunniste">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">ZetaPalvelut</div>
+          <p class="footer__tagline">Ammattimaista siivousta pääkaupunkiseudulla.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Sivuston navigaatio">
+          <div class="footer__nav-col">
+            <h4>Palvelut</h4>
+            <a href="#" onclick="showPage('palvelut')">Toimistosiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Ravintolasiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Kotisiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Raivaussiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Tapahtumasiivous</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yritys</h4>
+            <a href="#" onclick="showPage('vastuullisuus')">Vastuullisuus</a>
+            <a href="#" onclick="showPage('hinnoittelu')">Hinnoittelu</a>
+            <a href="#" onclick="showPage('artikkelit')">Artikkelit</a>
+            <a href="#" onclick="showPage('tyot')">Töihin meille</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yhteystiedot</h4>
+            <a href="tel:0505501501">050 550 1501</a>
+            <a href="mailto:info@zetapalvelut.fi">info@zetapalvelut.fi</a>
+            <p style="font-size:13px;color:#6a8a6a;margin-top:4px">Helsinki · Espoo · Vantaa</p>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Zeta Kiinteistöpalvelu ja Siisteys Oy · Kaikki oikeudet pidätetään</p>
+        <p>Tuntiveloitus 49,90 €/h · Kilometrikorvaus 0,80 €/km PKS:n ulkopuolelle</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- PALVELUT                                                       -->
+  <!-- ============================================================ -->
+  <main id="page-palvelut" class="page">
+    <div class="page-hero">
+      <span class="section__label">Palvelumme</span>
+      <h1 class="page-hero__title">Siivouspalvelut <em>yrityksille</em> ja kotitalouksille</h1>
+      <p class="page-hero__sub">Räätälöimme palvelun aina asiakkaan tarpeen mukaan. Toimistot, ravintolat, kodit ja vaativat erikoiskohteet — hoidamme ne kaikki.</p>
+    </div>
+
+    <!-- TABS -->
+    <div class="tabs-bar">
+      <div class="tabs-bar__inner">
+        <button class="tab active" onclick="switchTab('b2b',this)" aria-selected="true">Yrityksille</button>
+        <button class="tab" onclick="switchTab('b2c',this)" aria-selected="false">Kotitalouksille</button>
+      </div>
+    </div>
+
+    <!-- B2B -->
+    <div id="tab-b2b" class="tab-content active">
+      <div class="section">
+        <span class="section__label">Yrityspalvelut — pääkaupunkiseutu</span>
+        <div class="services-detail-grid">
+
+          <article class="detail-card">
+            <div class="detail-card__header">
+              <div class="detail-card__icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+              </div>
+              <div>
+                <h2 class="detail-card__title">Toimistosiivous</h2>
+                <span class="detail-card__badge">Yritykset</span>
+              </div>
+            </div>
+            <p class="detail-card__desc">Puhdas ja terveellinen työympäristö parantaa tuottavuutta ja jättää hyvän vaikutelman asiakkaisiin. Hoidamme siivous säännöllisesti ja luotettavasti sopimuksen mukaan.</p>
+            <ul class="detail-card__features">
+              <li>Päivittäinen, viikoittainen tai kuukausittainen siivous</li>
+              <li>Saniteettitilat, keittiöt ja neuvotteluhuoneet</li>
+              <li>Ikkunanpesu ja erikoispuhdistus</li>
+              <li>Joustavat aikataulut — myös iltaisin</li>
+            </ul>
+            <div class="detail-card__footer">
+              <span class="detail-card__price">Alkaen <strong>49,90 €/h</strong></span>
+              <button class="btn btn--sm" onclick="showPage('yhteystiedot')">Pyydä tarjous →</button>
+            </div>
+          </article>
+
+          <article class="detail-card detail-card--featured">
+            <div class="detail-card__featured-tag">⭐ Erikoisosaaminen</div>
+            <div class="detail-card__header">
+              <div class="detail-card__icon detail-card__icon--dark">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 11l19-9-9 19-2-8-8-2z"/></svg>
+              </div>
+              <div>
+                <h2 class="detail-card__title">Ravintolasiivous</h2>
+                <span class="detail-card__badge">Ravintolat &amp; kahvilat</span>
+              </div>
+            </div>
+            <p class="detail-card__desc">Tunnemme ravintola-alan hygieniavaatimukset. Palvelemme jo useita tunnettuja helsinkiläisravintoloita — haluamme lisää kumppaneita pääkaupunkiseudulta.</p>
+            <ul class="detail-card__features">
+              <li>Keittiö, sali ja saniteettitilat</li>
+              <li>Elintarvikehygienia ja omavalvonta huomioitu</li>
+              <li>Aamu-, ilta- ja yövuorot joustavasti</li>
+              <li>Nopea reagointi kiiretilanteissa</li>
+            </ul>
+            <div class="detail-card__footer">
+              <span class="detail-card__price">Alkaen <strong>49,90 €/h</strong></span>
+              <button class="btn btn--sm" onclick="showPage('yhteystiedot')">Pyydä tarjous →</button>
+            </div>
+          </article>
+
+          <article class="detail-card">
+            <div class="detail-card__header">
+              <div class="detail-card__icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <div>
+                <h2 class="detail-card__title">Tapahtumasiivous</h2>
+                <span class="detail-card__badge">Tapahtumat</span>
+              </div>
+            </div>
+            <p class="detail-card__desc">Tapahtuman järjestäminen on jo iso urakka — siivoaminen jälkeenpäin ei tarvitse olla sinun ongelmasi. Hoidamme sen nopeasti ja ammattitaitoisesti.</p>
+            <ul class="detail-card__features">
+              <li>Siivous tapahtuman jälkeen</li>
+              <li>Nopea reagointi ja joustavat aikataulut</li>
+              <li>Kaikenkokoiset tapahtumat</li>
+              <li>Myös suuret messut ja konferenssit</li>
+            </ul>
+            <div class="detail-card__footer">
+              <span class="detail-card__price">Alkaen <strong>49,90 €/h</strong></span>
+              <button class="btn btn--sm" onclick="showPage('yhteystiedot')">Pyydä tarjous →</button>
+            </div>
+          </article>
+
+          <article class="detail-card">
+            <div class="detail-card__header">
+              <div class="detail-card__icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+              </div>
+              <div>
+                <h2 class="detail-card__title">Teollisuus- ja varastosiivous</h2>
+                <span class="detail-card__badge">Teollisuus</span>
+              </div>
+            </div>
+            <p class="detail-card__desc">Suuret tilat vaativat ammattitaitoa ja oikeaa kalustoa. Hoidamme varastot, tuotantotilat ja teollisuushallit tehokkaasti ja turvallisesti.</p>
+            <ul class="detail-card__features">
+              <li>Varastot ja tuotantotilat</li>
+              <li>Lattiapesut ja pintojen puhdistus</li>
+              <li>Säännölliset tai kertaluonteiset sopimukset</li>
+              <li>Turvallisuusstandardit huomioitu</li>
+            </ul>
+            <div class="detail-card__footer">
+              <span class="detail-card__price">Alkaen <strong>49,90 €/h</strong></span>
+              <button class="btn btn--sm" onclick="showPage('yhteystiedot')">Pyydä tarjous →</button>
+            </div>
+          </article>
+
+        </div>
+
+        <h3 class="subsection-title">Erikoispalvelut</h3>
+        <div class="services-detail-grid">
+
+          <article class="detail-card">
+            <div class="detail-card__header">
+              <div class="detail-card__icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              </div>
+              <div>
+                <h2 class="detail-card__title">Raivaussiivous</h2>
+                <span class="detail-card__badge">Vaativat kohteet</span>
+              </div>
+            </div>
+            <p class="detail-card__desc">Otamme vastaan haasteet joita muut eivät. Vaativat siivouskohteet, asuntojen tyhjennykset ja erityistilanteet hoidetaan ammattitaidolla ja hienovaraisuudella.</p>
+            <ul class="detail-card__features">
+              <li>Asuntojen ja tilojen tyhjennykset</li>
+              <li>Erityistilanteiden siivous</li>
+              <li>Nopea reagointi, diskreetti toiminta</li>
+              <li>Vaikeatkin tilanteet ammattimaisesti</li>
+            </ul>
+            <div class="detail-card__footer">
+              <span class="detail-card__price">Hinta kohteen mukaan</span>
+              <button class="btn btn--sm" onclick="showPage('yhteystiedot')">Ota yhteyttä →</button>
+            </div>
+          </article>
+
+          <article class="detail-card">
+            <div class="detail-card__header">
+              <div class="detail-card__icon">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2.69l5.66 5.66a8 8 0 11-11.31 0z"/></svg>
+              </div>
+              <div>
+                <h2 class="detail-card__title">Saniteettitilat &amp; ikkunanpesu</h2>
+                <span class="detail-card__badge">Erikoispuhdistus</span>
+              </div>
+            </div>
+            <p class="detail-card__desc">Saniteettitilojen syväpuhdistus ja ikkunoiden pesu ammattimaisesti. Tulokset näkyvät heti — siisteys joka kestää.</p>
+            <ul class="detail-card__features">
+              <li>WC- ja peseytymistilojen syväpuhdistus</li>
+              <li>Ikkunanpesu sisältä ja ulkoa</li>
+              <li>Yritykset ja taloyhtiöt</li>
+              <li>Kertapuhdistus tai sopimuksella</li>
+            </ul>
+            <div class="detail-card__footer">
+              <span class="detail-card__price">Alkaen <strong>49,90 €/h</strong></span>
+              <button class="btn btn--sm" onclick="showPage('yhteystiedot')">Pyydä tarjous →</button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- B2C -->
+    <div id="tab-b2c" class="tab-content">
+      <div class="section">
+        <span class="section__label">Kotitalouspalvelut</span>
+        <div class="b2c-grid">
+
+          <article class="b2c-card">
+            <div class="b2c-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+            </div>
+            <h2 class="b2c-card__title">Kotisiivous</h2>
+            <p class="b2c-card__desc">Puhdas koti ilman vaivaa. Sovitaan aikataulu sinulle sopivaksi — kerran viikossa, kahdesti kuussa tai tarpeen mukaan. Luotettava siivooja tulee aina samaan aikaan.</p>
+            <ul class="detail-card__features" style="margin-bottom:1.25rem">
+              <li>Räätälöity siivousohjelma</li>
+              <li>Joustavat aikataulut</li>
+              <li>Sama luotettava siivooja</li>
+            </ul>
+            <div class="b2c-card__target">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+              Kaikille kotitalouksille
+            </div>
+          </article>
+
+          <article class="b2c-card b2c-card--featured">
+            <div class="b2c-card__featured-tag">Suosittu</div>
+            <div class="b2c-card__icon b2c-card__icon--dark">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <h2 class="b2c-card__title">Palvelut eläkeläisille</h2>
+            <p class="b2c-card__desc">Kodin siistinä pitäminen voi olla haastavaa. Me hoidamme siivoustyöt luotettavasti ja ystävällisesti — kilpailukykyiseen hintaan. Sama tuttu henkilö joka kerta.</p>
+            <ul class="detail-card__features" style="margin-bottom:1.25rem">
+              <li>Tuttu ja luotettava siivooja</li>
+              <li>Joustava aikataulutus</li>
+              <li>Kilpailukykyinen hinta 49,90 €/h</li>
+            </ul>
+            <div class="b2c-card__target">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+              Eläkeläiset ja seniorit
+            </div>
+          </article>
+
+          <article class="b2c-card">
+            <div class="b2c-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2.5 17a24.12 24.12 0 010-10"/><path d="M21.5 17a24.12 24.12 0 000-10"/><path d="M8 21s0-4 4-4 4 4 4 4"/><path d="M8 3s0 4 4 4 4-4 4-4"/><line x1="12" y1="7" x2="12" y2="13"/></svg>
+            </div>
+            <h2 class="b2c-card__title">Kodin piha- ja lumityöt</h2>
+            <p class="b2c-card__desc">Pihanhoito, lumityöt ja ulkoalueiden siistiminen. Talo näyttää hyvältä ympäri vuoden ilman omaa vaivaa — sopimuksella tai kertaluonteisesti.</p>
+            <ul class="detail-card__features" style="margin-bottom:1.25rem">
+              <li>Lumityöt ja hiekoitus</li>
+              <li>Pihanhoito ja siistiminen</li>
+              <li>Omakotitalot ja taloyhtiöt</li>
+            </ul>
+            <div class="b2c-card__target">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>
+              Omakotitalot ja taloyhtiöt
+            </div>
+          </article>
+
+        </div>
+
+        <!-- HINTA MUISTUTUS -->
+        <div class="price-reminder">
+          <div>
+            <span class="section__label" style="margin-bottom:4px">Hinnoittelu</span>
+            <div class="price-reminder__amount">49,90 €/h</div>
+            <p class="price-reminder__sub">Sama selkeä tuntiveloitus kaikissa palveluissa. Ei piilokustannuksia.</p>
+          </div>
+          <button class="btn btn--primary" onclick="showPage('yhteystiedot')">Pyydä ilmainen tarjous →</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- DARK CTA -->
+    <div class="dark-cta">
+      <div class="dark-cta__inner">
+        <div>
+          <h3 class="dark-cta__title">Ei löytynyt sopivaa palvelua?</h3>
+          <p class="dark-cta__sub">Räätälöimme palvelun aina tarpeen mukaan. Ota yhteyttä niin löydetään yhdessä ratkaisu.</p>
+        </div>
+        <a href="tel:0505501501" class="btn btn--white">050 550 1501</a>
+      </div>
+    </div>
+
+    <footer class="footer" aria-label="Alatunniste">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">ZetaPalvelut</div>
+          <p class="footer__tagline">Ammattimaista siivousta pääkaupunkiseudulla.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Sivuston navigaatio">
+          <div class="footer__nav-col">
+            <h4>Palvelut</h4>
+            <a href="#" onclick="showPage('palvelut')">Toimistosiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Ravintolasiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Kotisiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Raivaussiivous</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yritys</h4>
+            <a href="#" onclick="showPage('vastuullisuus')">Vastuullisuus</a>
+            <a href="#" onclick="showPage('hinnoittelu')">Hinnoittelu</a>
+            <a href="#" onclick="showPage('artikkelit')">Artikkelit</a>
+            <a href="#" onclick="showPage('tyot')">Töihin meille</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yhteystiedot</h4>
+            <a href="tel:0505501501">050 550 1501</a>
+            <a href="mailto:info@zetapalvelut.fi">info@zetapalvelut.fi</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Zeta Kiinteistöpalvelu ja Siisteys Oy</p>
+        <p>Tuntiveloitus 49,90 €/h · Kilometrikorvaus 0,80 €/km PKS:n ulkopuolelle</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- HINNOITTELU                                                    -->
+  <!-- ============================================================ -->
+  <main id="page-hinnoittelu" class="page">
+    <div class="page-hero">
+      <span class="section__label">Hinnoittelu</span>
+      <h1 class="page-hero__title">Selkeä hinta, <em>ei yllätyksiä</em></h1>
+      <p class="page-hero__sub">Tuntiveloitus on aina <strong>49,90 €/h</strong> palvelusta riippumatta. Pääkaupunkiseudun ulkopuolelle lisätään kilometrikorvaus <strong>0,80 €/km</strong>. Ei piilokustannuksia.</p>
+    </div>
+
+    <div class="section">
+      <!-- HINTA KORTIT -->
+      <span class="section__label">Palvelukohtaiset hinnat</span>
+      <div class="price-grid">
+
+        <div class="price-card">
+          <span class="price-card__badge price-card__badge--light">Kotitalouksille</span>
+          <div class="price-card__service">Kotisiivous &amp; pihatyöt</div>
+          <div class="price-card__amount">49,90 €</div>
+          <div class="price-card__unit">/ tunti · kaikki palvelut</div>
+          <ul class="price-card__list">
+            <li><span class="check-circle">✓</span>Kerran viikossa tai tarpeen mukaan</li>
+            <li><span class="check-circle">✓</span>Räätälöity aikataulu</li>
+            <li><span class="check-circle">✓</span>Luotettava ja täsmällinen</li>
+            <li><span class="check-circle">✓</span>Sopii eläkeläisille</li>
+          </ul>
+          <hr class="price-card__divider">
+          <button class="btn btn--outline btn--full" onclick="showPage('yhteystiedot')">Pyydä tarjous</button>
+        </div>
+
+        <div class="price-card price-card--featured">
+          <span class="price-card__badge price-card__badge--dark">Suosituin</span>
+          <div class="price-card__service">Toimisto- ja yrityssiivous</div>
+          <div class="price-card__amount">49,90 €</div>
+          <div class="price-card__unit">/ tunti · sopimuksella</div>
+          <ul class="price-card__list">
+            <li><span class="check-circle">✓</span>Päivittäinen, viikottainen tai kuukausittainen</li>
+            <li><span class="check-circle">✓</span>Kaikenkokoiset yritykset</li>
+            <li><span class="check-circle">✓</span>Saniteettitilat ja keittiöt mukana</li>
+            <li><span class="check-circle">✓</span>Sopimusasiakkaille joustoa</li>
+          </ul>
+          <hr class="price-card__divider">
+          <button class="btn btn--primary btn--full" onclick="showPage('yhteystiedot')">Pyydä tarjous</button>
+        </div>
+
+        <div class="price-card">
+          <span class="price-card__badge price-card__badge--light">Erikoispalvelu</span>
+          <div class="price-card__service">Raivaussiivous</div>
+          <div class="price-card__amount">Kysy</div>
+          <div class="price-card__unit">hinta räätälöidään kohteen mukaan</div>
+          <ul class="price-card__list">
+            <li><span class="check-circle">✓</span>Vaativat ja erikoiskohteet</li>
+            <li><span class="check-circle">✓</span>Asuntojen tyhjennykset</li>
+            <li><span class="check-circle">✓</span>Nopea reagointi</li>
+            <li><span class="check-circle">✓</span>Diskreetti ja ammattimainen</li>
+          </ul>
+          <hr class="price-card__divider">
+          <button class="btn btn--outline btn--full" onclick="showPage('yhteystiedot')">Ota yhteyttä</button>
+        </div>
+
+      </div>
+
+      <!-- KM INFO -->
+      <div class="km-info-box">
+        <div class="km-info-box__icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <div>
+          <h3 class="km-info-box__title">Kilometrikorvaus PKS:n ulkopuolelle</h3>
+          <p class="km-info-box__desc">Toimimme ensisijaisesti Helsingissä, Espoossa ja Vantaalla — ilman lisäkuluja. Mikäli kohde sijaitsee näiden alueiden ulkopuolella, lisätään matkakuluihin kilometrikorvaus <strong>0,80 €/km</strong>. Sovimme tästä aina etukäteen ennen töiden aloittamista.</p>
+          <div class="km-info-box__cities">
+            <span>Helsinki</span>
+            <span>Espoo</span>
+            <span>Vantaa</span>
+            <span style="color:#7a9a7a;font-size:13px">→ muut alueet + 0,80 €/km</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="faq-section">
+        <span class="section__label">Usein kysyttyä</span>
+        <h2 class="section__title" style="margin-bottom:2rem">Hinnoittelusta tarkemmin</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-item__q">Miten hinnoittelu toimii käytännössä?</summary>
+            <p class="faq-item__a">Hinnoittelumme perustuu työtunteihin — 49,90 €/h. Käymme ensin kartoittamassa kohteen tai sovimme puhelimessa tarpeet, jonka jälkeen lähetämme selkeän tarjouksen. Ei piilokustannuksia eikä yllätyksiä.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__q">Onko minimiveloitus?</summary>
+            <p class="faq-item__a">Käymme sopimaan minimituntimäärän asiakaskohtaisesti. Pienimmätkin kohteet otetaan vastaan — ota yhteyttä ja katsotaan yhdessä mikä sopii.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__q">Voiko hintaa neuvotella sopimuksella?</summary>
+            <p class="faq-item__a">Kyllä. Pitkäaikaisille sopimusasiakkaille voimme tarjota kilpailukykyisemmän kokonaisratkaisun. Kerro tarpeesi ja tehdään sopimus joka sopii molemmille.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__q">Milloin kilometrikorvaus peritään?</summary>
+            <p class="faq-item__a">Kilometrikorvaus 0,80 €/km peritään ainoastaan silloin kun kohde sijaitsee Helsingin, Espoon ja Vantaan ulkopuolella. Kaikki PKS-kohteet hoidetaan ilman lisäkuluja. Sovimme matkakuluista aina avoimesti etukäteen.</p>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-item__q">Miten maksaminen tapahtuu?</summary>
+            <p class="faq-item__a">Laskutamme suoritetuista töistä jälkikäteen. Yritysasiakkaille nettolaskutus ja kotiasiakkaille sovitaan tapauskohtaisesti. Kaikki maksutavat pyritään tekemään mahdollisimman helpoksi.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+
+    <div class="dark-cta">
+      <div class="dark-cta__inner">
+        <div>
+          <h3 class="dark-cta__title">Haluatko tarjouksen?</h3>
+          <p class="dark-cta__sub">Kartoitetaan tarpeesi ja tehdään selkeä tarjous — ilmaiseksi ja ilman sitoumuksia.</p>
+        </div>
+        <button class="btn btn--white" onclick="showPage('yhteystiedot')">Pyydä tarjous</button>
+      </div>
+    </div>
+
+    <footer class="footer" aria-label="Alatunniste">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">ZetaPalvelut</div>
+          <p class="footer__tagline">Ammattimaista siivousta pääkaupunkiseudulla.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Sivuston navigaatio">
+          <div class="footer__nav-col">
+            <h4>Palvelut</h4>
+            <a href="#" onclick="showPage('palvelut')">Toimistosiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Ravintolasiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Kotisiivous</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yritys</h4>
+            <a href="#" onclick="showPage('vastuullisuus')">Vastuullisuus</a>
+            <a href="#" onclick="showPage('artikkelit')">Artikkelit</a>
+            <a href="#" onclick="showPage('tyot')">Töihin meille</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yhteystiedot</h4>
+            <a href="tel:0505501501">050 550 1501</a>
+            <a href="mailto:info@zetapalvelut.fi">info@zetapalvelut.fi</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Zeta Kiinteistöpalvelu ja Siisteys Oy</p>
+        <p>Tuntiveloitus 49,90 €/h · Kilometrikorvaus 0,80 €/km PKS:n ulkopuolelle</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- VASTUULLISUUS                                                  -->
+  <!-- ============================================================ -->
+  <main id="page-vastuullisuus" class="page">
+    <div class="page-hero page-hero--dark">
+      <span class="section__label" style="color:#88c888">Vastuullisuus</span>
+      <h1 class="page-hero__title" style="color:#fff">Arvot jotka näkyvät <em style="color:#88c888">joka työssä</em></h1>
+      <p class="page-hero__sub" style="color:#a8c8a8">Zeta Palvelut on sertifioitu, vastuullinen työnantaja. Henkilöstömme on koulutettu ja hyvinvoivaa — se näkyy suoraan palvelun laadussa.</p>
+    </div>
+
+    <div class="cert-block">
+      <div class="cert-block__text">
+        <span class="section__label">Sertifioinnit</span>
+        <h2 class="section__title">Arvostettu työpaikka — virallisesti</h2>
+        <p class="section__sub" style="margin-bottom:1.5rem">Olemme saaneet Arvostettu työpaikka -sertifioinnin, joka kertoo siitä, että henkilöstömme voi hyvin ja on sitoutunut työhönsä. Tyytyväinen työntekijä tekee laadukasta työtä — ja se näkyy jokaisen asiakkaan saamassa palvelussa.</p>
+        <div class="cert-tags">
+          <div class="cert-tag">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Arvostettu työpaikka -sertifioitu
+          </div>
+          <div class="cert-tag">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            Työturvallisuuskoulutus
+          </div>
+        </div>
+      </div>
+      <div class="cert-block__visual">
+        <div class="cert-visual-card">
+          <div class="cert-visual-icon">🏆</div>
+          <h3 class="cert-visual-title">Arvostettu työpaikka</h3>
+          <p class="cert-visual-sub">Sertifioitu yritys, joka panostaa henkilöstön hyvinvointiin, turvallisuuteen ja ammatilliseen kehittymiseen.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section__label">Henkilöstö ja turvallisuus</span>
+      <h2 class="section__title" style="margin-bottom:2rem">Koulutettu ja sitoutunut tiimi</h2>
+      <div class="resp-cards">
+        <div class="resp-card">
+          <div class="resp-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="resp-card__title">Työturvallisuuskoulutus</h3>
+          <p class="resp-card__desc">Kaikki työntekijämme suorittavat työturvallisuuskorttikoulutuksen. Se tarkoittaa turvallista työskentelyä niin meille kuin asiakkaillemme.</p>
+        </div>
+        <div class="resp-card">
+          <div class="resp-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <h3 class="resp-card__title">Henkilöstön hyvinvointi</h3>
+          <p class="resp-card__desc">Panostamme työntekijöidemme hyvinvointiin. Tyytyväinen tiimi on luotettava tiimi — ja se näkyy suoraan palvelun laadussa asiakkaalle.</p>
+        </div>
+        <div class="resp-card">
+          <div class="resp-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3 class="resp-card__title">Jatkuva kehittyminen</h3>
+          <p class="resp-card__desc">Koulutamme henkilöstöämme jatkuvasti. Uudet menetelmät, välineet ja asiakastarpeet — pysymme aina ajan tasalla.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="safety-strip">
+      <div class="safety-strip__item">
+        <div class="safety-strip__num">100%</div>
+        <div class="safety-strip__title">Koulutettu henkilöstö</div>
+        <p class="safety-strip__desc">Jokainen työntekijä on suorittanut työturvallisuuskoulutuksen ennen ensimmäistä työpäivää.</p>
+      </div>
+      <div class="safety-strip__item">
+        <div class="safety-strip__num">PKS</div>
+        <div class="safety-strip__title">Pääkaupunkiseutu</div>
+        <p class="safety-strip__desc">Palvelemme Helsinkiä, Espoota ja Vantaata — tuttu alue, luotettava toimitus.</p>
+      </div>
+      <div class="safety-strip__item">
+        <div class="safety-strip__num">✓</div>
+        <div class="safety-strip__title">Sertifioitu työnantaja</div>
+        <p class="safety-strip__desc">Arvostettu työpaikka -sertifiointi todistaa sitoutumisemme henkilöstön hyvinvointiin.</p>
+      </div>
+    </div>
+
+    <footer class="footer" aria-label="Alatunniste">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">ZetaPalvelut</div>
+          <p class="footer__tagline">Ammattimaista siivousta pääkaupunkiseudulla.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Sivuston navigaatio">
+          <div class="footer__nav-col">
+            <h4>Palvelut</h4>
+            <a href="#" onclick="showPage('palvelut')">Toimistosiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Ravintolasiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Kotisiivous</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yritys</h4>
+            <a href="#" onclick="showPage('hinnoittelu')">Hinnoittelu</a>
+            <a href="#" onclick="showPage('artikkelit')">Artikkelit</a>
+            <a href="#" onclick="showPage('tyot')">Töihin meille</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yhteystiedot</h4>
+            <a href="tel:0505501501">050 550 1501</a>
+            <a href="mailto:info@zetapalvelut.fi">info@zetapalvelut.fi</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Zeta Kiinteistöpalvelu ja Siisteys Oy</p>
+        <p>Tuntiveloitus 49,90 €/h · Kilometrikorvaus 0,80 €/km PKS:n ulkopuolelle</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- ARTIKKELIT                                                     -->
+  <!-- ============================================================ -->
+  <main id="page-artikkelit" class="page">
+    <div class="page-hero">
+      <span class="section__label">Artikkelit</span>
+      <h1 class="page-hero__title">Siivousalan <em>asiantuntija-artikkelit</em></h1>
+      <p class="page-hero__sub">Oppaita, vinkkejä ja alan tietoa — kirjoitettu niin että löydät meidät Googlesta kun tarvitset apua.</p>
+    </div>
+
+    <div class="section">
+      <div class="blog-grid">
+
+        <article class="blog-card">
+          <div class="blog-card__img blog-card__img--1" aria-hidden="true"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__cat">Rappusiivous</span>
+            <h2 class="blog-card__title">Miten rappusiivous toimii — täydellinen opas taloyhtiöille</h2>
+            <p class="blog-card__excerpt">Rappujen siisteys vaikuttaa koko talon ilmeeseen. Kerromme mitä ammattimainen rappusiivous sisältää ja miksi se kannattaa ulkoistaa.</p>
+            <div class="blog-card__footer">
+              <span>5 min lukuaika</span>
+              <span class="blog-card__read">Lue artikkeli →</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card__img blog-card__img--2" aria-hidden="true"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__cat">Raivaussiivous</span>
+            <h2 class="blog-card__title">Mitä raivaussiivous tarkoittaa ja milloin sitä tarvitaan?</h2>
+            <p class="blog-card__excerpt">Raivaussiivous on erityistilanteiden ratkaisu. Kerromme avoimesti mitä se sisältää ja miten prosessi etenee askel askeleelta.</p>
+            <div class="blog-card__footer">
+              <span>7 min lukuaika</span>
+              <span class="blog-card__read">Lue artikkeli →</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card__img blog-card__img--3" aria-hidden="true"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__cat">Ravintolasiivous</span>
+            <h2 class="blog-card__title">Ravintolasiivous Helsinki — mitä hygieniastandardit vaativat?</h2>
+            <p class="blog-card__excerpt">Ravintolan puhtaus ei ole valinnaista — se on lain vaatimus. Käymme läpi mitä ammattimainen ravintolasiivous tarkoittaa käytännössä.</p>
+            <div class="blog-card__footer">
+              <span>6 min lukuaika</span>
+              <span class="blog-card__read">Lue artikkeli →</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card__img blog-card__img--4" aria-hidden="true"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__cat">Kotisiivous</span>
+            <h2 class="blog-card__title">Kotisiivous eläkeläisille Helsingissä — edullinen ja luotettava apu</h2>
+            <p class="blog-card__excerpt">Kodin siistinä pitäminen ei saisi olla taakka. Kerromme miten kotisiivouspalvelu toimii ja mitä se maksaa eläkeläisille.</p>
+            <div class="blog-card__footer">
+              <span>4 min lukuaika</span>
+              <span class="blog-card__read">Lue artikkeli →</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card__img blog-card__img--5" aria-hidden="true"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__cat">Toimistosiivous</span>
+            <h2 class="blog-card__title">Toimistosiivous Helsinki — näin valitset oikean siivousyrityksen</h2>
+            <p class="blog-card__excerpt">Toimiston siisteys vaikuttaa henkilöstön hyvinvointiin ja asiakkaiden ensivaikutelmaan. Kerromme mitä kannattaa ottaa huomioon.</p>
+            <div class="blog-card__footer">
+              <span>5 min lukuaika</span>
+              <span class="blog-card__read">Lue artikkeli →</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-card__img blog-card__img--6" aria-hidden="true"></div>
+          <div class="blog-card__body">
+            <span class="blog-card__cat">Pihatyöt</span>
+            <h2 class="blog-card__title">Lumityöt pääkaupunkiseudulla — milloin ulkoistaa ammattilaisille?</h2>
+            <p class="blog-card__excerpt">Talvi tuo mukanaan lumityöt — onko se viisaampaa hoitaa itse vai ulkoistaa? Vertailimme vaihtoehdot puolestasi.</p>
+            <div class="blog-card__footer">
+              <span>4 min lukuaika</span>
+              <span class="blog-card__read">Lue artikkeli →</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="seo-cta-box">
+        <h3 class="seo-cta-box__title">Löydä meidät hakukoneesta</h3>
+        <p class="seo-cta-box__sub">Kirjoitamme jatkuvasti uusia artikkeleita — tavoitteena olla #1 hakutulos keskeisillä siivousalan hakusanoilla.</p>
+        <div class="seo-tags">
+          <span class="seo-tag">rappusiivous</span>
+          <span class="seo-tag">raivaussiivous helsinki</span>
+          <span class="seo-tag">toimistosiivous helsinki</span>
+          <span class="seo-tag">ravintolasiivous</span>
+          <span class="seo-tag">kotisiivous eläkeläisille</span>
+          <span class="seo-tag">lumityöt espoo</span>
+          <span class="seo-tag">ikkunanpesu vantaa</span>
+          <span class="seo-tag">siivousyritys pääkaupunkiseutu</span>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" aria-label="Alatunniste">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">ZetaPalvelut</div>
+          <p class="footer__tagline">Ammattimaista siivousta pääkaupunkiseudulla.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Sivuston navigaatio">
+          <div class="footer__nav-col">
+            <h4>Palvelut</h4>
+            <a href="#" onclick="showPage('palvelut')">Toimistosiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Ravintolasiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Kotisiivous</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yritys</h4>
+            <a href="#" onclick="showPage('vastuullisuus')">Vastuullisuus</a>
+            <a href="#" onclick="showPage('hinnoittelu')">Hinnoittelu</a>
+            <a href="#" onclick="showPage('tyot')">Töihin meille</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yhteystiedot</h4>
+            <a href="tel:0505501501">050 550 1501</a>
+            <a href="mailto:info@zetapalvelut.fi">info@zetapalvelut.fi</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Zeta Kiinteistöpalvelu ja Siisteys Oy</p>
+        <p>Tuntiveloitus 49,90 €/h · Kilometrikorvaus 0,80 €/km PKS:n ulkopuolelle</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- TÖIHIN MEILLE                                                  -->
+  <!-- ============================================================ -->
+  <main id="page-tyot" class="page">
+    <div class="page-hero page-hero--dark">
+      <span class="section__label" style="color:#88c888">Töihin meille</span>
+      <h1 class="page-hero__title" style="color:#fff">Tule osaksi <em style="color:#88c888">Zeta-tiimiä</em></h1>
+      <p class="page-hero__sub" style="color:#a8c8a8">Olemme kasvava siivousalan yritys pääkaupunkiseudulla. Haemme jatkuvasti motivoituneita tekijöitä — sertifioitu, arvostettu työpaikka.</p>
+    </div>
+
+    <div class="jobs-why">
+      <div class="jobs-why__item">
+        <div class="jobs-why__icon">🏆</div>
+        <h3 class="jobs-why__title">Arvostettu työnantaja</h3>
+        <p class="jobs-why__desc">Sertifioitu Arvostettu työpaikka -yritys. Henkilöstömme hyvinvointi on meille tärkeää.</p>
+      </div>
+      <div class="jobs-why__item">
+        <div class="jobs-why__icon">📚</div>
+        <h3 class="jobs-why__title">Koulutus mukana</h3>
+        <p class="jobs-why__desc">Tarjoamme työturvallisuuskoulutuksen ja perehdytyksen. Ei aiempaa kokemusta vaadita.</p>
+      </div>
+      <div class="jobs-why__item">
+        <div class="jobs-why__icon">⏰</div>
+        <h3 class="jobs-why__title">Joustavat vuorot</h3>
+        <p class="jobs-why__desc">Osa-aikainen tai kokopäiväinen — sovitaan yhdessä sinulle sopiva aikataulu.</p>
+      </div>
+      <div class="jobs-why__item">
+        <div class="jobs-why__icon">📍</div>
+        <h3 class="jobs-why__title">PKS-alue</h3>
+        <p class="jobs-why__desc">Kohteet pääkaupunkiseudulla — Helsinki, Espoo ja Vantaa.</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <span class="section__label">Avoimet paikat</span>
+      <h2 class="section__title" style="margin-bottom:1.5rem">Hae nyt</h2>
+
+      <div class="job-card job-card--hot">
+        <div>
+          <span class="job-hot-tag">🔥 Kiireellinen</span>
+          <h3 class="job-card__title">Käsilumityöntekijä (5–7 henkilöä)</h3>
+          <div class="job-card__meta">
+            <span class="job-meta-tag">Määräaikainen</span>
+            <span class="job-meta-tag">Pääkaupunkiseutu</span>
+            <span class="job-meta-tag">Talvikausi</span>
+          </div>
+        </div>
+        <button class="btn btn--primary" onclick="document.getElementById('apply-form').scrollIntoView({behavior:'smooth'})">Hae paikkaa</button>
+      </div>
+
+      <div class="job-card">
+        <div>
+          <h3 class="job-card__title">Siivooja — toimistot ja yritykset</h3>
+          <div class="job-card__meta">
+            <span class="job-meta-tag">Osa-aikainen</span>
+            <span class="job-meta-tag">Helsinki</span>
+            <span class="job-meta-tag">Jatkuva haku</span>
+          </div>
+        </div>
+        <button class="btn btn--outline" onclick="document.getElementById('apply-form').scrollIntoView({behavior:'smooth'})">Hae paikkaa</button>
+      </div>
+
+      <div class="job-card">
+        <div>
+          <h3 class="job-card__title">Ravintolasiivoja</h3>
+          <div class="job-card__meta">
+            <span class="job-meta-tag">Osa- tai kokopäiväinen</span>
+            <span class="job-meta-tag">Helsinki</span>
+            <span class="job-meta-tag">Jatkuva haku</span>
+          </div>
+        </div>
+        <button class="btn btn--outline" onclick="document.getElementById('apply-form').scrollIntoView({behavior:'smooth'})">Hae paikkaa</button>
+      </div>
+
+    </div>
+
+    <!-- HAKEMUSLOMAKE -->
+    <div class="section" id="apply-form">
+      <div class="apply-form-box">
+        <h2 class="apply-form-box__title">Lähetä avoin hakemus</h2>
+        <p class="apply-form-box__sub">Etkö löytänyt sopivaa paikkaa? Lähetä avoin hakemus — otamme yhteyttä kun sopiva paikka avautuu.</p>
+        <form onsubmit="handleSubmit(event)" novalidate>
+          <div class="form-row" style="margin-bottom:12px">
+            <input type="text" placeholder="Etunimi ja sukunimi" required class="form-input">
+            <input type="tel" placeholder="Puhelinnumero" required class="form-input">
+          </div>
+          <input type="email" placeholder="Sähköposti" required class="form-input" style="margin-bottom:12px">
+          <select class="form-input form-select" style="margin-bottom:12px">
+            <option value="">Mihin tehtäviin haet?</option>
+            <option>Toimistosiivous</option>
+            <option>Ravintolasiivous</option>
+            <option>Kotisiivous</option>
+            <option>Lumityöt ja pihatyöt</option>
+            <option>Avoin hakemus — kaikki tehtävät</option>
+          </select>
+          <textarea placeholder="Kerro lyhyesti itsestäsi ja miksi haluaisit töihin Zeta Palveluihin..." class="form-textarea" rows="4" style="margin-bottom:12px"></textarea>
+          <button type="submit" class="btn btn--primary">Lähetä hakemus →</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer" aria-label="Alatunniste">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">ZetaPalvelut</div>
+          <p class="footer__tagline">Ammattimaista siivousta pääkaupunkiseudulla.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Sivuston navigaatio">
+          <div class="footer__nav-col">
+            <h4>Palvelut</h4>
+            <a href="#" onclick="showPage('palvelut')">Toimistosiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Ravintolasiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Kotisiivous</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yritys</h4>
+            <a href="#" onclick="showPage('vastuullisuus')">Vastuullisuus</a>
+            <a href="#" onclick="showPage('hinnoittelu')">Hinnoittelu</a>
+            <a href="#" onclick="showPage('artikkelit')">Artikkelit</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yhteystiedot</h4>
+            <a href="tel:0505501501">050 550 1501</a>
+            <a href="mailto:info@zetapalvelut.fi">info@zetapalvelut.fi</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Zeta Kiinteistöpalvelu ja Siisteys Oy</p>
+        <p>Tuntiveloitus 49,90 €/h · Kilometrikorvaus 0,80 €/km PKS:n ulkopuolelle</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- ============================================================ -->
+  <!-- OTA YHTEYTTÄ                                                   -->
+  <!-- ============================================================ -->
+  <main id="page-yhteystiedot" class="page">
+    <div class="page-hero">
+      <span class="section__label">Ota yhteyttä</span>
+      <h1 class="page-hero__title">Kartoitetaan tarpeesi — <em>ilmaiseksi</em></h1>
+      <p class="page-hero__sub">Soita, lähetä sähköpostia tai täytä lomake. Vastataan nopeasti ja tehdään sinulle sopiva ratkaisu.</p>
+    </div>
+
+    <div class="contact-layout">
+      <div class="contact-layout__info">
+        <span class="section__label">Yhteystiedot</span>
+        <div class="contact-card">
+          <div class="contact-card__item">
+            <div class="contact-card__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.01 1.18 2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="contact-card__label">Puhelin</div>
+              <a href="tel:0505501501" class="contact-card__val">050 550 1501</a>
+            </div>
+          </div>
+          <div class="contact-card__item">
+            <div class="contact-card__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="contact-card__label">Sähköposti</div>
+              <a href="mailto:info@zetapalvelut.fi" class="contact-card__val">info@zetapalvelut.fi</a>
+            </div>
+          </div>
+          <div class="contact-card__item">
+            <div class="contact-card__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+            </div>
+            <div>
+              <div class="contact-card__label">Yritys</div>
+              <div class="contact-card__val" style="font-size:14px">Zeta Kiinteistöpalvelu ja Siisteys Oy</div>
+            </div>
+          </div>
+          <div class="contact-card__item">
+            <div class="contact-card__icon">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="contact-card__label">Vastausaika</div>
+              <div class="contact-card__val">Nopea vastaus arkisin</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="area-box">
+          <h3 class="area-box__title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Toiminta-alue
+          </h3>
+          <div class="area-box__cities">
+            <span>Helsinki</span>
+            <span>Espoo</span>
+            <span>Vantaa</span>
+          </div>
+          <p class="area-box__km">PKS:n ulkopuolelle kilometrikorvaus 0,80 €/km</p>
+        </div>
+      </div>
+
+      <div class="contact-layout__form">
+        <span class="section__label">Tarjouspyyntölomake</span>
+        <form class="contact-form" onsubmit="handleSubmit(event)" novalidate>
+          <div class="form-row">
+            <input type="text" placeholder="Nimi" required class="form-input">
+            <input type="text" placeholder="Yritys (valinnainen)" class="form-input">
+          </div>
+          <input type="tel" placeholder="Puhelinnumero" required class="form-input">
+          <input type="email" placeholder="Sähköposti" required class="form-input">
+          <select class="form-input form-select" required>
+            <option value="">Palvelu — valitse</option>
+            <option>Toimistosiivous</option>
+            <option>Ravintolasiivous</option>
+            <option>Kotisiivous</option>
+            <option>Tapahtumasiivous</option>
+            <option>Raivaussiivous</option>
+            <option>Lumi- ja pihatyöt</option>
+            <option>Ikkunanpesu</option>
+            <option>Muu / kysyttävää</option>
+          </select>
+          <select class="form-input form-select">
+            <option value="">Kuinka usein? — valitse</option>
+            <option>Kertaluonteinen</option>
+            <option>Viikoittainen sopimus</option>
+            <option>Kuukausittainen sopimus</option>
+            <option>Sovitaan yhdessä</option>
+          </select>
+          <textarea placeholder="Kerro lyhyesti tarpeestasi — kohde, koko, erityistoiveet..." class="form-textarea" rows="5"></textarea>
+          <button type="submit" class="btn btn--primary btn--full">Lähetä tarjouspyyntö →</button>
+          <p class="form-note">Käsittelemme tietosi luottamuksellisesti. Emme jaa tietoja kolmansille osapuolille.</p>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer" aria-label="Alatunniste">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">ZetaPalvelut</div>
+          <p class="footer__tagline">Ammattimaista siivousta pääkaupunkiseudulla.</p>
+        </div>
+        <nav class="footer__nav" aria-label="Sivuston navigaatio">
+          <div class="footer__nav-col">
+            <h4>Palvelut</h4>
+            <a href="#" onclick="showPage('palvelut')">Toimistosiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Ravintolasiivous</a>
+            <a href="#" onclick="showPage('palvelut')">Kotisiivous</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yritys</h4>
+            <a href="#" onclick="showPage('vastuullisuus')">Vastuullisuus</a>
+            <a href="#" onclick="showPage('hinnoittelu')">Hinnoittelu</a>
+            <a href="#" onclick="showPage('artikkelit')">Artikkelit</a>
+          </div>
+          <div class="footer__nav-col">
+            <h4>Yhteystiedot</h4>
+            <a href="tel:0505501501">050 550 1501</a>
+            <a href="mailto:info@zetapalvelut.fi">info@zetapalvelut.fi</a>
+          </div>
+        </nav>
+      </div>
+      <div class="footer__bottom">
+        <p>© 2025 Zeta Kiinteistöpalvelu ja Siisteys Oy</p>
+        <p>Tuntiveloitus 49,90 €/h · Kilometrikorvaus 0,80 €/km PKS:n ulkopuolelle</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    function showPage(id) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.querySelectorAll('.nav__link').forEach(a => a.classList.remove('active'));
+      const page = document.getElementById('page-' + id);
+      if (page) {
+        page.classList.add('active');
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      const navMap = {
+        etusivu: 0, palvelut: 1, hinnoittelu: 2,
+        vastuullisuus: 3, artikkelit: 4, tyot: 5
+      };
+      const links = document.querySelectorAll('.nav__link:not(.nav__link--cta)');
+      if (navMap[id] !== undefined) links[navMap[id]].classList.add('active');
+    }
+
+    function switchTab(id, el) {
+      document.querySelectorAll('.tab').forEach(t => { t.classList.remove('active'); t.setAttribute('aria-selected','false'); });
+      document.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+      el.classList.add('active');
+      el.setAttribute('aria-selected','true');
+      document.getElementById('tab-' + id).classList.add('active');
+    }
+
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = e.target.querySelector('button[type="submit"]');
+      btn.textContent = 'Lähetetty! Olemme yhteydessä pian.';
+      btn.style.background = '#1e521e';
+      btn.disabled = true;
+    }
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      const open = hamburger.getAttribute('aria-expanded') === 'true';
+      hamburger.setAttribute('aria-expanded', !open);
+      mobileMenu.classList.toggle('open');
+      mobileMenu.setAttribute('aria-hidden', open);
+    });
+
+    function closeMobile() {
+      hamburger.setAttribute('aria-expanded','false');
+      mobileMenu.classList.remove('open');
+      mobileMenu.setAttribute('aria-hidden','true');
+    }
+
+    // Scroll nav shadow
+    window.addEventListener('scroll', () => {
+      document.getElementById('nav').classList.toggle('nav--scrolled', window.scrollY > 10);
+    });
+
+    // Animate on scroll (simple intersection observer)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.service-card, .detail-card, .b2c-card, .blog-card, .why-card, .resp-card').forEach(el => {
+      el.classList.add('animate-on-scroll');
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
